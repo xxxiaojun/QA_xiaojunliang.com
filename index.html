@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+      <?hph include __DIR__ . '/pa'
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+        <title></title>
+        <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+     <!--====== Bootstrap CSS ======-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+    <header>
+      <div class="navigation-bar">
+        <div class="navigation-logo">
+          <a href="index.html">
+            <img src="images/logo.png">
+          </a>
+        </div>
+        <div class="navigation-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </div>
+      </div>
+    </header>
+      <!-- banner section -->
+      <section>
+        <div class="container">
+          <div class="banner-col">
+            <img src="images/logo-white.png" alt="logo">
+          </div>
+          <div class="content">
+            <h1>Hello!<br>I'M XIAOJUN LIANG</h1>
+            <h3> Graphic & UI Designer</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="project">
+      <div class="projects-container">
+        <h1>Projects</h1>
+        <div class="button-links">
+        <button class="all" type="button" data-filter='*'>All </button>
+        <button type="button" data-filter='.graphic'>Graphic </button>
+        <button type="button" data-filter='.uiux'>UI/UX</button>
+        <button type="button" data-filter='.motion'>Motion</button>
+        </div>
+      </div>
+      <div class="projects-card"> 
+
+        <a href="project1.html"><div class="card graphic uiux">
+          <img src="images/Design-Explorer-.jpg" alt="">
+            <div class="overlay">  
+              <div class="text">
+               <h4>DESIGN-EXOLORER</h4> 
+               <p>Branding<br>UI/UX</p>
+              </div>
+            </div>
+        </div></a>
+
+        <a href="icecream.html"><div class="card graphic">
+          <img src="images/icecream-cover.jpg" alt="">
+          <div class="overlay">  
+            <div class="text">
+             <h4>PUMPKIN ICE CREAM</h4> 
+             <p>Graphic design<br>Product Design</p>
+            </div>
+          </div>
+        </div></a>
+
+        <a href="project2.html"><div class="card graphic">
+          <img src="images/kitty cover.png" alt="">
+          <div class="overlay">  
+            <div class="text">
+             <h4>Kitty Dumpling</h4> 
+             <p>Graphic design<br>Branding</p>
+            </div>
+          </div>
+        </div></a>
+
+        <a href="graph.html"><div class="card graphic">
+          <img src="images/photography.png" alt="">
+          <div class="overlay">  
+            <div class="text">
+             <h4>photography</h4> 
+             <p>Graphic design</p>
+            </div>
+          </div>
+        </div></a>
+
+        <a href="ar_animation.html"><div class="card graphic">
+         <img src="images/ar-banner-cover.png" alt="">
+          <div class="overlay">  
+            <div class="text">
+             <h4>3D Animation</h4> 
+             <p>Graphic design<br>Motion</p>
+            </div>
+          </div>
+        </div></a>
+
+        <a href="music_video.html"><div class="card motion">
+          <img src="images/music video cover.png" alt="">
+          <div class="overlay">  
+            <div class="text">
+             <h4>music video</h4> 
+             <p>Motion Graphic<br>Illustration</p>
+            </div>
+          </div>
+          </div></a>
+      </div>
+  </section>
+  <!-- FOOTER TESTING -->
+  <footer>
+    <div class="footer">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 XIAOJUN LIANG</p>
+    
+        <a href="https://www.linkedin.com/in/xiaojun-liang-2a8838225/">
+          <img src="images/in.png" width="100%" alt="Linkedin">
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Project</a></li>
+          <li class="nav-item"><a href="about me.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+  </footer>
+  
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="scripts/scroll-lock.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="scripts/masonry.js"></script>
+         <!-- Bootstrap script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <!-- jQuery -->
+      <!-- Isotope -->
+      <script src="scripts/jquery-1.12.4.min.js"></script>
+      <script src="scripts/isotope.pkgd.min.js"></script>
+      <script>
+        $('.projects-card').isotope ({
+     itemSelector: '.card',
+     layoutMode: 'fitRows'
+ });
+ $('.button-links button').click(function(){
+     $('.button-links button').removeClass('active');
+     $(this).addClass('active');
+ 
+     var selector = $(this).attr('data-filter');
+     $('.projects-card').isotope({
+         filter: selector
+     });
+     return false;
+ });
+      </script>
+     <!-- Main js -->
+     <!-- <script src="scripts/main.js"></script> -->
+    </body>
+</html>
