@@ -267,7 +267,6 @@ a:link {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 10%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -278,16 +277,19 @@ a:link {
 
 .card {
   position: relative;
-  width: 400px;
+  width: 300px;
   height: 300px;
+  overflow: hidden;
  
   /* width: calc(50% - 10px); */
   
  }
- .card img {
-  display: block;
+  .card img {
+  display: flex;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit:cover;
+
 }
 
 .overlay {
